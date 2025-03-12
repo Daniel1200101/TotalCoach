@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sheet_option_1"
+        android:title="Trainee progress" />
+    <item
+        android:id="@+id/sheet_option_2"
+        android:title="Workout plan" />
+
+</menu>

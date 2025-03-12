@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TotalCoach" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Set your custom colors -->
+        <item name="colorPrimary">@color/darkGreen</item>
+        <item name="colorPrimaryVariant">@color/darkGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.TotalCoach" parent="Base.Theme.TotalCoach" />
+</resources>

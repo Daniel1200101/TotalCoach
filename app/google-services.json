@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "454484037891",
+    "project_id": "totalcoach-7284c",
+    "storage_bucket": "totalcoach-7284c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454484037891:android:05e047df2034bfb4861936",
+        "android_client_info": {
+          "package_name": "com.example.totalcoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454484037891-8v7no4fbfala47jd3o6edugkfhnjogtq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.totalcoach",
+            "certificate_hash": "d658971a24c4f07a86b804d1235665d291881fe2"
+          }
+        },
+        {
+          "client_id": "454484037891-63vm5hoih4kr9g2mhuhas2aifc75ssai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdUqXXKa_xz3jgxGrdPWOC--HPSRp0GJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454484037891-63vm5hoih4kr9g2mhuhas2aifc75ssai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

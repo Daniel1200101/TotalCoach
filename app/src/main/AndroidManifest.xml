@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.totalcoach">
+
+    <!-- Internet Permission for Firebase -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+
+
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TotalCoach"
+        tools:targetApi="31">
+
+        <!-- Firebase Authentication Metadata -->
+        <meta-data
+            android:name="com.google.firebase.auth.API_KEY"
+            android:value="@string/default_web_client_id"/>
+
+        <!-- Login Activity as the Launcher Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Intent Filter for Deep Link -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Deep link URI pattern -->
+                <data android:scheme="https"
+                    android:host="yourapp.com"
+                    android:pathPrefix="/trainee-login" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".TrainerMainActivity"
+            android:exported="true"/>
+        <!-- Trianee Main Activity -->
+        <activity
+            android:name=".TraineeMainActivity"
+            android:exported="true"/>
+
+        <!-- Sign Up Activity -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true"/>
+        <!-- Sign Up Activity -->
+        <activity
+            android:name=".PersonalDetailsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".AddTraineeActivity"
+            android:exported="true"/>
+
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".PostActivity" />
+
+
+    </application>
+
+</manifest>

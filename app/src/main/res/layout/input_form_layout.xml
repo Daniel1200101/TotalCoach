@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for title with a button to show the dropdown -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">  <!-- Centers the items vertically -->
+
+        <AutoCompleteTextView
+            android:id="@+id/eventTitleEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter or select title"
+            android:inputType="text"/>
+
+        <!-- Button to open the dropdown, now vertically centered -->
+        <ImageButton
+            android:id="@+id/selectTitleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/arrow_down_float"
+            android:contentDescription="Select Title"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginStart="8dp"/> <!-- Optionally add a margin for spacing -->
+
+    </LinearLayout>
+
+    <!-- EditText for description -->
+    <EditText
+        android:id="@+id/eventDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Description"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

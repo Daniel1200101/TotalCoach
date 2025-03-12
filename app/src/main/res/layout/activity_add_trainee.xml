@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="ltr">
+
+
+
+    <!-- Green Background Section -->
+    <View
+        android:id="@+id/greenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/curved_green_bg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/return_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Return"
+        android:src="@android:drawable/ic_menu_revert"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title Section with "Return" Button -->
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toStartOf="@id/greenBackground"
+        app:layout_constraintTop_toTopOf="@id/greenBackground">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Add New Trainee Information"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@id/return_button"
+            app:layout_constraintTop_toBottomOf="@id/return_button"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <!-- Trainee Details Section -->
+    <LinearLayout
+        android:id="@+id/traineeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/greenBackground">
+
+        <!-- Name EditText -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_frame"
+            android:hint="Name"
+            android:padding="10dp"
+            android:textColorHint="@color/lightGray" />
+
+        <!-- Age EditText -->
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_frame"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColorHint="@color/lightGray" />
+
+        <!-- Gender EditText -->
+        <EditText
+            android:id="@+id/genderInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_frame"
+            android:hint="Gender"
+            android:padding="10dp"
+            android:textColorHint="@color/lightGray" />
+
+        <!-- Height EditText -->
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_frame"
+            android:hint="Height"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColorHint="@color/lightGray" />
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_frame"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColorHint="@color/lightGray" />
+
+        <!-- Location EditText -->
+        <EditText
+            android:id="@+id/locationInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_frame"
+            android:hint="Location"
+            android:padding="10dp"
+            android:textColorHint="@color/lightGray" />
+
+        <!-- Phone EditText -->
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_frame"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColorHint="@color/lightGray" />
+
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient_background"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/traineeDetails" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

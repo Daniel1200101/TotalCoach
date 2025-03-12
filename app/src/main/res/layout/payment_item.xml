@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/clientNameTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="John Smith"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+    <TextView
+        android:id="@+id/trainingTypeTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Personal Training"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Mar 11, 2025"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="$85.00"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        android:textStyle="bold" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/statusChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid"
+        android:textSize="12sp"
+        app:chipBackgroundColor="@color/status_paid"
+        app:chipMinHeight="24dp"
+        app:textEndPadding="8dp"
+        app:textStartPadding="8dp" />
+</LinearLayout>

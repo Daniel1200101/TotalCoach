@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#bed2d0</color>
+    <color name="darkGreen">#2b524a</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="mediumGray">#E0E0E0</color>
+    <color name="darkGray">#757575</color>
+
+    <!-- Theme colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Status colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+
+    <!-- Background colors -->
+    <color name="backgroundPrimary">#FFFFFF</color>
+    <color name="backgroundSecondary">#F8F8F8</color>
+    <color name="divider">#EEEEEE</color>
+
+    <!-- Text colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textDisabled">#9E9E9E</color>
+    <!-- Training type colors for pie chart -->
+    <color name="personal_trainer_color">#4285F4</color>
+    <color name="online_trainer_color">#34A853</color>
+    <color name="group_training_color">#FBBC05</color>
+
+    <!-- Payment status colors -->
+    <color name="status_paid">#34A853</color>
+    <color name="status_pending">#FBBC05</color>
+    <color name="status_overdue">#EA4335</color>
+
+    <color name="dark_gray">#2B2B2B</color>
+
+
+</resources>

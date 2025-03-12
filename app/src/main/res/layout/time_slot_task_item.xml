@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:layout_margin="4dp"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <!-- Horizontal layout for time slot, title, and checkbox -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/timeSlotTextView"
+                android:text="Time Slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:text="Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/timeSlotCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checked"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <!-- Description (initially hidden) -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

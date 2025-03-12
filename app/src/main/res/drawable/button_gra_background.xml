@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- White Border -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/lightGray"/>  <!-- White Border Color -->
+
+    <!-- Background Color (Keep your existing background) -->
+    <solid android:color="@android:color/transparent"/>  <!-- Transparent or any color you want -->
+
+    <!-- Rounded Corners -->
+    <corners android:radius="25dp"/>
+
+</shape>

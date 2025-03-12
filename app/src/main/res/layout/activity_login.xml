@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layoutDirection="ltr"
+    >
+
+    <!-- Logo -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/circleLayer"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient_light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icon_app"
+        app:layout_constraintBottom_toBottomOf="@id/circleLayer"
+        app:layout_constraintEnd_toEndOf="@id/circleLayer"
+        app:layout_constraintStart_toStartOf="@id/circleLayer"
+        app:layout_constraintTop_toTopOf="@id/circleLayer" />
+
+    <!-- App name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/passwordInput"
+        app:layout_constraintStart_toStartOf="@id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@id/circleLayer" />
+
+
+    <!-- Email/Phone Input -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_gra_background"
+        android:hint=" Email or Phone"
+        android:padding="10dp"
+        android:textColorHint="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appName" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_gra_background"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailInput" />
+
+
+    <!-- White Curved Bottom Section -->
+    <View
+        android:id="@+id/whiteBackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/curved_white_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput" />
+    <!-- Login Button -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/gradient_background"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/whiteBackground" />
+
+    <LinearLayout
+        android:id="@+id/dont_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/loginButton"
+        app:layout_constraintStart_toStartOf="@id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/loginButton">
+
+        <!-- Have an account? Sign In -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Don't have an account?"
+            android:textColor="@color/darkGreen"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints" />
+        <!-- Sign In Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="6dp"
+            android:text="Sign Up"
+            android:textColor="@color/darkGreen"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- LinearLayout to contain the OR section -->
+    <LinearLayout
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintEnd_toEndOf="@id/loginButton"
+        app:layout_constraintStart_toStartOf="@id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/dont_have_account">
+
+        <!-- Left Line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/loginButton" />
+
+        <!-- OR Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:text="OR"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Right Line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@id/loginButton" />
+    </LinearLayout>
+
+
+    <!-- Create an account button with Google logo -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/appProvider"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_frame"
+        android:text="Continue with Google"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_regular"
+        app:icon="@drawable/ic_google_logo"
+        app:iconGravity="start"
+        app:iconTint="@null"
+        app:iconSize="30dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@id/loginButton"
+        app:layout_constraintStart_toStartOf="@id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/orText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
